@@ -17,4 +17,4 @@ export function withLoading<P extends object>(
 
     return <Component {...(restProps as P)} />;
   };
-}
+};
