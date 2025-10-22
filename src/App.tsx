@@ -9,7 +9,7 @@ export type ToDo = {
 function App() {
   const [todos, setTodos] = useState<ToDo[]>([]);
   const [loading, setLoading] = useState(true);
-
+ 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/todos')
       .then((response) => response.json())
