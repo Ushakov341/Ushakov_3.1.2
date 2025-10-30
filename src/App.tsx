@@ -16,6 +16,9 @@ function App() {
       .then((json) => {
         setTodos(json);
         setLoading(false);
+      })
+      .catch(() => {
+        setLoading(false);
       });
   }, []);
 
