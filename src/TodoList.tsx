@@ -8,8 +8,8 @@ type Props = {
 const TodoList = ({ todos }: Props) => {
   return (
     <ol>
-      {todos.map((todo) => (
-        <li>{todo.title}</li>
+      {todos.map((todo, index) => (
+        <li key={index}>{todo.title}</li>
       ))}
     </ol>
   );
